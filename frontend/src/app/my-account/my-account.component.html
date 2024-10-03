@@ -1,0 +1,22 @@
+<section class="page-header section-sm">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row g-4 g-lg-5 text-center text-lg-start justify-content-center justify-content-lg-start">
+            <div class="col-lg-3 col-md-4 col-sm-5 col-6">
+              <img class="img-fluid rounded" [src]="'http://127.0.0.1:3000/getimage/' + user.image" alt="Thomas Macaulay" width="250" height="250">
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <h1 class="h3 text-dark mb-3">{{user.email}}</h1>
+              <div class="content">
+                <p>{{ user.about }}</p>
+                <button class="btn btn-dark" *ngIf="getEmail() !== 'admin@gmail.com'" style="margin-right: 1%;" routerLink="/contact">Contact</button>
+                <button class="btn btn-dark " *ngIf="getEmail() !== 'admin@gmail.com'" style="margin-right: 1%;" routerLink="/commande">Commande</button>
+                <button *ngIf="getEmail() === 'admin@gmail.com'" class="btn btn-dark" routerLink="/ajoutfleure">Ajouter Fleur</button>              
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

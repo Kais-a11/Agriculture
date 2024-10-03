@@ -1,0 +1,75 @@
+.container 
+{
+    margin: 3% auto auto auto;
+}
+#login {
+    margin-top: 7%;
+}
+
+img 
+{
+    height: 100%;
+    width: 80%;
+}
+
+.form-group label {
+    color: black;
+    font-weight:800;
+    font-family: "Protest Revolution", sans-serif;
+    margin-top: 2%;
+    
+}
+
+.form-group input {
+    margin-right: 5%;
+    width: 70%;
+    margin: 2%;
+    height: 50px;
+}
+h2 {
+    margin-top: 5%;
+    font-size: 250%;
+    font-family: "Protest Revolution", sans-serif;
+}
+
+.col-6 a {
+    object-fit: cover;
+    border-radius: 40%;
+    margin: 2%;
+    color: black;
+    font-size: 220%;
+    float: right;
+}
+
+.col-6 a:hover{
+    opacity: 1.0;
+    transform: scale(1.1);
+}
+
+.btn 
+{
+    width: 70%;
+    margin-left: 2%;
+    height: 50px;
+    background-color: #558257;
+}
+
+.form-check {
+    margin-top: 10%;
+    color: #558257;
+    font-size: 140%;
+}
+
+h3 
+{
+    color: gray;
+    font-size: 60%;
+    margin-top: 10%;
+}
+
+
+
+
+
+
+

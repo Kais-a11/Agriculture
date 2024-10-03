@@ -1,0 +1,36 @@
+
+form{
+    margin: 5% auto auto auto;
+    margin-bottom: 1%;
+}
+
+.form-group label {
+    font-weight:800;
+    color: hsl(123, 21%, 42%);
+    margin-top: 1%;
+}
+.form-group input {
+    width: 80%;
+    margin-top: 1%;
+}
+
+ button{
+    background-color: hsl(123, 21%, 42%);;
+    font-weight: 600;
+    width: 25%;
+    float: left;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+
+button span {
+    color: black;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button:hover{
+    background-color: white;
+}
+
+
+

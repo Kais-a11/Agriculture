@@ -1,0 +1,30 @@
+
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1% auto auto 3%;
+}
+
+li {
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: auto 10px auto 30px;
+    float: right;
+}
+
+li:hover{
+    background-color: #558257;
+    border-radius: 20%;
+}
+
+
+
+
+
+

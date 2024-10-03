@@ -1,0 +1,46 @@
+<div class="container mb-auto">
+    <div class="card shadow">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img src="assets/commande.jpg" alt="commande!" class="img">
+                </div>
+            </div>
+
+            <div class="col-8">
+                <form >
+                    <div class="form-group ">
+                        <label for="username">Username</label>
+                        <input type="text" [(ngModel)]="commande.username" name="username" class="form-control" id="username" placeholder="Enter your Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" [(ngModel)]="commande.email" name="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="PhoneNumber">PhoneNumber</label>
+                        <input type="number" [(ngModel)]="commande.PhoneNumber" name="Phonenumber" class="form-control" id="PhoneNumber" placeholder="Enter your PhoneNumber">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" [(ngModel)]="commande.city" name="city" class="form-control" id="city" placeholder="Enter your city">
+                    </div>
+                    <div class="form-group">
+                        <label for="flower">Fleur</label>
+                        <input type="text" [(ngModel)]="commande.Fleure" name="fleure" class="form-control" id="fleure" placeholder="Enter your fleure">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" [(ngModel)]="commande.Quantity" name="quantity" class="form-control" id="quantity" min="1"
+                            placeholder="Enter your quantity">
+                    </div>
+                    <button type="submit" (click)="ajout()" class="btn btn-dark">
+                        <span>Commander</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

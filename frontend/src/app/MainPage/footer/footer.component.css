@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  i {
+    margin: 1%;
+    font-size: 200%;
+  }

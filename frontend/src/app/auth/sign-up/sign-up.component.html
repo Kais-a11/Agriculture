@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="card shadow">
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/fleurlogin.jpg" alt="img?">
+            </div>
+            <div class="col-6" id="signup">
+                <div class="row">
+                    <div class="col-3">
+                        <h2 class="text-left">Sign up</h2>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="https://www.facebook.com/votrepage" target="_blank" rel="noopener"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/votrecompte" target="_blank" rel="noopener"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group ">
+                        <label for="username">Username</label>
+                        <input type="text" [(ngModel)]="user.username" name="username" class="form-control " id="name" placeholder="Username" required>
+                    </div>
+                    <div class="form-group ">
+                        <label for="email">Email</label>
+                        <input type="email" [(ngModel)]="user.email" name="email" class="form-control " id="email" placeholder="Email " required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" [(ngModel)]="user.password" name="password" class="form-control" id="password" placeholder="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Image</label>
+                        <input type="file" (change)="select($event)" name="image" class="form-control m-1" placeholder="image" required>
+                    </div>
+
+                    <button (click)="register()" class="btn btn-dark">Register</button>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Remember Me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <a href="#">
+                                <h3>Forgot Password</h3>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <label for="membre" class="text-center" style="font-size: 150%;color:gray;margin-top:auto;margin-left:20%;">
+                            Not a Member?
+                            <a href="/login" style="font-size: 100%;margin-right:60%;margin-top:auto;color:#558257;margin-left:1%;">Login</a>
+                        </label>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

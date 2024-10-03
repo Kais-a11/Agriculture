@@ -1,0 +1,57 @@
+<div class="container ">
+    <div class="card shadow mt-1" id="card">
+        <div class="row">
+            <div class="col-6">
+                <h1>
+                    Make your space more vibrant
+                    and healthier with our decorative plants: 
+                    the natural touch that makes all the difference.
+
+                </h1>
+            </div>
+            <div class="col-6">
+                <img src="assets/plantes.jpg" alt="faute?" class="image">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row ">
+                <h2>search your plant here</h2>
+                <form class="form ml-auto mt-1">
+                    <div class="input-group">
+                      <input type="text" id="search" class="form-control" placeholder="Search your plants ..." aria-label="Search ..." aria-describedby="button-addon2">   
+                    </div>
+                  </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+          <div class="col-4" *ngFor="let flower of flowers">
+            <div class="card shadow">
+              <img [src]="'http://127.0.0.1:3000/getimage/' + flower.image" alt="flower" class="image-hover image-height">
+              <div class="btn btn-success mt-1" id="btn1" (click)="order()">
+             <a href="/commande" id="order">Order</a>   
+            </div>
+              <h1  style="margin-top: 1%;">{{ flower.title}}</h1>
+              <h4 style="margin-top: 1%;">{{flower.description}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<div class="container">
+    <div class="card mt-2">
+        <h3 style="margin-top: 1%;">
+            If you need other plants, 
+            please contact me by sending 
+            a registration form with your 
+            email and a description of the 
+            plant you would like to receive. 
+            Thank you.        </h3>
+            <div class="btn btn-dark mt-1" id="btn2" >
+                <a href="/contact" id="contact" >Contact Us</a>
+            </div>
+    </div>
+</div>
+</div>
+
